@@ -14,6 +14,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
+document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
 
 /*!
 * Start Bootstrap - Grayscale v7.0.5 (https://startbootstrap.com/theme/grayscale)
@@ -68,3 +69,4 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
