@@ -283,6 +283,22 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 #rotator img:nth-child(4) { animation-delay: 9s; }
 
 
+*#second-rotator {
+    border: 2px solid white;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    width: 478px;
+    height: 366px;
+}
+
+#second-rotator img {
+    opacity:1;
+    position:absolute;
+    left:0;
+    right:0;
+}
+
 pre,
 code,
 kbd,
@@ -11803,4 +11819,8 @@ body {
 
 .forAttention {
     color : #820000;
+}
+
+.text-justify {
+  text-align: justify;
 }
