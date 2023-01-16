@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+
+
+.reserve-icon:hover {
+    opacity: 0.5;
+}
+
 .hidden {
     opacity : 0;
     filter : blur(5px);
@@ -11730,7 +11736,7 @@ body {
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid black;
+    border-left: 0.05rem solid black;
   }
 }
 .projects-section .project-text {
@@ -11783,7 +11789,7 @@ body {
 .contact-section .card hr {
   border-color: #64a19d;
   border-width: 0.25rem;
-  width: 3rem;
+  width: 2rem;
 }
 .contact-section .social {
   margin-top: 5rem;
