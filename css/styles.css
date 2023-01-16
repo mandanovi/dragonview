@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
-
+.icon-box {
+    opacity: 0.9;
+}
 
 .reserve-icon:hover {
     opacity: 0.5;
