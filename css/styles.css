@@ -1,4 +1,121 @@
 @charset "UTF-8";
+
+.hidden {
+    opacity : 0;
+    filter : blur(5px);
+    transform : translateX(-100%);
+    transition : all 1s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition : none;
+    }
+}
+
+.show {
+    opacity : 1;
+    filter : blur(0);
+    transform: translateX(0);
+}
+
+.logos {
+    display: flex;
+}
+
+.logo:nth-child(2) {
+    transition-delay : 200ms;
+}
+
+.logo:nth-child(3) {
+    transition-delay : 400ms;
+}
+
+.logo:nth-child(4) {
+    transition-delay : 600ms;
+}
+
+.logo:nth-child(5) {
+    transition-delay : 800ms;
+}
+
+.logo:nth-child(6) {
+    transition-delay : 1000ms;
+}
+
+.logo:nth-child(7) {
+    transition-delay : 1200ms;
+}
+
+.logo:nth-child(8) {
+    transition-delay : 1400ms;
+}
+
+.logo:nth-child(4) {
+    transition-delay : 1600ms;
+}
+
+#forAttention {
+    background-color: #820000;
+    color : white;
+}
+
+.forAttention {
+    color : #820000;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+*#rotator {
+    border: 2px solid white;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    width: 488px;
+    height: 366px;
+}
+#rotator img {
+    opacity:0;
+    animation-name: fade;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    position:absolute;
+    left:0;
+    right:0;
+}
+
+@keyframes fade {
+    0%   { opacity: 0; }
+    11.11%   { opacity: 1; }
+    33.33%  { opacity: 1; }
+    44.44%  { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+#rotator img:nth-child(1) { animation-delay: 0s; }
+#rotator img:nth-child(2) { animation-delay: 3s; }
+#rotator img:nth-child(3) { animation-delay: 6s; }
+#rotator img:nth-child(4) { animation-delay: 9s; }
+
+
+*#second-rotator {
+    border: 2px solid white;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    width: 478px;
+    height: 366px;
+}
+
+#second-rotator img {
+    opacity:1;
+    position:absolute;
+    left:0;
+    right:0;
+}
+
 /*!
 * Start Bootstrap - Grayscale v7.0.5 (https://startbootstrap.com/theme/grayscale)
 * Copyright 2013-2022 Start Bootstrap
@@ -251,53 +368,7 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
-*#rotator {
-    border: 2px solid white;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    width: 488px;
-    height: 366px;
-}
-#rotator img {
-    opacity:0;
-    animation-name: fade;
-    animation-duration: 9s;
-    animation-iteration-count: infinite;
-    position:absolute;
-    left:0;
-    right:0;
-}
 
-@keyframes fade {
-    0%   { opacity: 0; }
-    11.11%   { opacity: 1; }
-    33.33%  { opacity: 1; }
-    44.44%  { opacity: 0; }
-    100% { opacity: 0; }
-}
-
-#rotator img:nth-child(1) { animation-delay: 0s; }
-#rotator img:nth-child(2) { animation-delay: 3s; }
-#rotator img:nth-child(3) { animation-delay: 6s; }
-#rotator img:nth-child(4) { animation-delay: 9s; }
-
-
-*#second-rotator {
-    border: 2px solid white;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    width: 478px;
-    height: 366px;
-}
-
-#second-rotator img {
-    opacity:1;
-    position:absolute;
-    left:0;
-    right:0;
-}
 
 pre,
 code,
@@ -11757,70 +11828,3 @@ body {
   padding: 5rem 0;
 }
 
-.hidden {
-    opacity : 0;
-    filter : blur(5px);
-    transform : translateX(-100%);
-    transition : all 1s;
-}
-
-@media(prefers-reduced-motion) {
-    .hidden {
-        transition : none;
-    }
-}
-
-.show {
-    opacity : 1;
-    filter : blur(0);
-    transform: translateX(0);
-}
-
-.logos {
-    display: flex;
-}
-
-.logo:nth-child(2) {
-    transition-delay : 200ms;
-}
-
-.logo:nth-child(3) {
-    transition-delay : 400ms;
-}
-
-.logo:nth-child(4) {
-    transition-delay : 600ms;
-}
-
-.logo:nth-child(5) {
-    transition-delay : 800ms;
-}
-
-.logo:nth-child(6) {
-    transition-delay : 1000ms;
-}
-
-.logo:nth-child(7) {
-    transition-delay : 1200ms;
-}
-
-.logo:nth-child(8) {
-    transition-delay : 1400ms;
-}
-
-.logo:nth-child(4) {
-    transition-delay : 1600ms;
-}
-
-#forAttention {
-    background-color: #820000;
-    color : white;
-}
-
-.forAttention {
-    color : #820000;
-}
-
-.text-justify {
-  text-align: justify;
-}
