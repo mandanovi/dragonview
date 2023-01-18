@@ -11587,7 +11587,8 @@ body {
   font-size: 80%;
   padding: 0.75rem;
   color: #820000;
-  border: 1px solid #820000;
+  border: #820000;
+  opacity : 0.3;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
