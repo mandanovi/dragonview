@@ -11586,8 +11586,8 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: white;
-  border: white;
+  color: transparent;
+  border: transparent;
   opacity : 0.3;
 }
 #mainNav .navbar-toggler:focus {
