@@ -11832,3 +11832,80 @@ body {
   padding: 5rem 0;
 }
 
+.calendar-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.calendarhead {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  padding: 2rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 85%, #000 100%), url("../assets/img/room.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.calendarhead h1, .calendarhead .h1 {
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: 0.8rem;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.calendarhead h3, .calendarhead .h3 {
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 3.9rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.8rem;
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.calendarhead h2, .calendarhead .h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+}
+
+@media screen and (max-width:768px){
+  .calendarhead h1{
+     font-size:2.5rem;
+  }
+  .calendarhead h3 {
+    font-size:1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .calendarhead h1, .calendarhead .h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .calendarhead {
+    height: 100vh;
+    padding: 0;
+  }
+  .calendarhead h1, .calendarhead .h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+  .calendarhead h2, .calendarhead .h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
+}
