@@ -11833,10 +11833,21 @@ body {
 }
 
 .calendar-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  padding-top: 15rem;
 }
+
+@media screen and (max-width:768px){
+  .calendar-section {
+  padding-top: 8rem;
+  }
+
+}
+@media (max-width: 768px) {
+    iframe {
+      width: 450px;
+      height: 400px;
+    }
+  }
 
 .calendarhead {
   position: relative;
@@ -11908,4 +11919,8 @@ body {
     max-width: 30rem;
     font-size: 1.25rem;
   }
+}
+
+.calendar-footer {
+    padding-top: 15rem;
 }
