@@ -11967,3 +11967,7 @@ body {
 .navbar-toggler:focus ~ .navbar-collapse .nav-link {
     color: #8B0000;
 }
+
+button.navbar-toggler:focus ~ div.collapse.navbar-collapse a.nav-link {
+    color: #8B0000;
+}
