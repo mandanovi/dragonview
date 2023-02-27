@@ -11848,12 +11848,12 @@ body {
 }
 
 .calendar-section {
-  padding-top: 16rem;
+  padding-top: 22rem;
 }
 
 @media screen and (max-width:768px){
   .calendar-section {
-  padding-top: 5rem;
+  padding-top: 2rem;
   }
 
 }
