@@ -11716,7 +11716,7 @@ body {
      font-size:2.5rem;
   }
   .masthead h3 {
-    font-size:0.7rem;
+    font-size:0.6rem;
   }
 }
 
@@ -11724,6 +11724,9 @@ body {
   .masthead h1, .masthead .h1 {
     font-size: 2.5rem;
     line-height: 2.5rem;
+  .masthead h3 {
+    font-size:0.8rem;
+  }
   }
 }
 @media (min-width: 992px) {
