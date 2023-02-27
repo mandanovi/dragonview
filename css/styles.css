@@ -4273,10 +4273,17 @@ textarea.form-control-lg {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 2rem;
   text-decoration: none;
   white-space: nowrap;
 }
+
+@media screen and (max-width:768px) {
+  .navbar-brand {
+    font-size:1.25rem;
+  }
+}
+
 .navbar-nav {
   display: flex;
   flex-direction: column;
