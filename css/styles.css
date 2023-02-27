@@ -11952,14 +11952,7 @@ body {
   .googleCalendar{
   position: relative;
   height: 300px;
-  width: 450px;
+  width: 400px;
   padding-bottom: 50%;
-}
-  .googleCalendar iframe{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 }
