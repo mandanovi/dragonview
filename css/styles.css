@@ -348,7 +348,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #50817e;
+  color: #8B0000;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3695,7 +3695,7 @@ textarea.form-control-lg {
   text-decoration: underline;
 }
 .btn-link:hover {
-  color: #50817e;
+  color: #8B0000;
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
@@ -11952,7 +11952,7 @@ body {
     .googleCalendar{
     position: relative;
     height: 300px;
-    width: 450px;
+    width: 300px;
     padding-bottom: 50%;
     }
     .googleCalendar iframe{
