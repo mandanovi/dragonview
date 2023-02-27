@@ -11841,12 +11841,12 @@ body {
 }
 
 .calendar-section {
-  padding-top: 16rem;
+  padding-top: 10rem;
 }
 
 @media screen and (max-width:768px){
   .calendar-section {
-  padding-top: 8rem;
+  padding-top: 5rem;
   }
 
 }
@@ -11931,4 +11931,12 @@ body {
 
 .calendar-footer {
     padding-top: 15rem;
+}
+
+/* Responsive iFrame */
+.responsive-iframe-container {
+   position: relative;
+   padding-bottom: 56.25%;
+   height: 0;
+   overflow: hidden;
 }
