@@ -11815,7 +11815,7 @@ body {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
-  text-shadow: 0 0.15rem 0.65rem rgba(0, 0, 0, 0.65);
+  text-shadow: 0 0.1rem 0.35rem rgba(0, 0, 0, 0.5);
 }
 
 .masthead h3, .masthead .h3 {
