@@ -11867,10 +11867,12 @@ body {
 }
 @media (min-width: 992px) {
   .masthead {
-    height: 160vh;
+    height: 100vh;
     padding: 0;
+    background-position: center top;
   }
   .masthead h1, .masthead .h1 {
+    padding-top: 3rem;
     font-size: clamp(4rem, 5vw, 5.25rem);
     line-height: 1.05;
     letter-spacing: 0.45rem;
