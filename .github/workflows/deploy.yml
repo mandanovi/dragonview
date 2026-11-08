@@ -1,0 +1,30 @@
+name: Deploy website to S3
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: arn:aws:iam::218334939373:role/custom-github-website-deploy
+          aws-region: us-west-2
+
+      - name: Sync files to S3
+        run: >
+          aws s3 sync . s3://dragonviewbisbee.com
+          --delete
+          --exclude ".git/*"
+          --exclude ".github/*"
+          --dryrun
