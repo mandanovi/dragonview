@@ -1,9 +1,6 @@
 name: Deploy website to S3
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 permissions:
@@ -27,4 +24,4 @@ jobs:
           --delete
           --exclude ".git/*"
           --exclude ".github/*"
-          --dryrun
+
