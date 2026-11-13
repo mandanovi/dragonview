@@ -11917,7 +11917,7 @@ body {
   font-weight: 600;
   line-height: 2rem;
   letter-spacing: 0.4rem;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 0.1rem 0.35rem rgba(0, 0, 0, 0.5);
 }
 
@@ -11927,7 +11927,7 @@ body {
   font-weight: 600;
   line-height: 1.4;
   letter-spacing: 0.3rem;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.76);
   text-shadow: 0 0.1rem 0.45rem rgba(0, 0, 0, 0.65);
 }
 
