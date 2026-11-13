@@ -32,22 +32,22 @@
 .booking-links {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(0.5rem, 2vw, 1.25rem);
-  max-width: 34rem;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  max-width: 41rem;
   margin: 2.25rem auto 1.5rem;
 }
 
 .booking-link {
   display: flex;
   min-width: 0;
-  min-height: 7.5rem;
+  min-height: 8.5rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 0.55rem;
   padding: 0.75rem 0.5rem;
   color: rgba(255, 255, 255, 0.95);
-  font-size: 0.75rem;
+  font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-decoration: none;
@@ -59,7 +59,7 @@
 
 .booking-link:hover,
 .booking-link:focus-visible {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.92);
   background: rgba(0, 0, 0, 0.4);
   border-color: rgba(255, 255, 255, 0.75);
 }
@@ -67,23 +67,50 @@
 .booking-link img {
   display: block;
   width: auto;
-  height: 4.25rem;
+  height: 5rem;
   max-width: 100%;
   object-fit: contain;
 }
 
+.booking-logo-vrbo {
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  flex: 0 0 5rem;
+  margin-inline: auto;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #13254b;
+}
+
+.booking-logo-vrbo img {
+  width: 86%;
+  max-width: none;
+  height: auto;
+  filter: brightness(0) invert(1);
+  transform: translateY(0.2rem) scale(1.25);
+}
+
+.contact-section .booking-logo-vrbo {
+  width: 125px;
+  height: 125px;
+  flex-basis: 125px;
+}
+
 .booking-logo-calendar {
   display: block;
-  width: 4.25rem;
-  height: 4.25rem;
+  width: 5rem;
+  height: 5rem;
   overflow: hidden;
 }
 
 .booking-link-calendar img {
-  width: 11.25rem;
+  width: 13.25rem;
   max-width: none;
   height: auto;
-  transform: translateX(-3.5rem);
+  transform: translateX(-4.125rem);
 }
 
 /* On narrower screens, keep booking links useful without competing with the title. */
@@ -96,7 +123,7 @@
     min-height: 0;
     gap: 0.4rem;
     padding: 0.25rem 0;
-    font-size: 0.7rem;
+    font-size: 1.05rem;
     border-color: transparent;
     background: transparent;
   }
@@ -108,25 +135,35 @@
   }
 
   .booking-link img {
-    height: 3.25rem;
+    height: 3.75rem;
   }
 
   .booking-logo-calendar {
-    width: 3.25rem;
-    height: 3.25rem;
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+
+  .booking-logo-vrbo {
+    width: 3.75rem;
+    height: 3.75rem;
+    flex-basis: 3.75rem;
+  }
+
+  .booking-link .booking-logo-vrbo img {
+    transform: translateY(0.15rem) scale(1.1);
   }
 
   .booking-link-calendar img {
-    width: 8.6rem;
+    width: 9.9rem;
     height: auto;
-    transform: translateX(-2.675rem);
+    transform: translateX(-3.075rem);
   }
 }
 
   .contentarea {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
   }
 
   .contentarea a,
@@ -138,12 +175,6 @@
   .contentarea img {
     height: auto;
   }
-
-@media (max-width: 575.98px) {
-  .contentarea {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
 
 .hidden {
     opacity : 0;
@@ -286,6 +317,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  font-size: 112.5%;
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #7464a1;
@@ -336,9 +368,9 @@
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
-  --bs-body-font-size: 1rem;
+  --bs-body-font-size: 1.125rem;
   --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.5;
+  --bs-body-line-height: 1.6;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
 }
@@ -563,7 +595,7 @@ a > code {
 kbd {
   padding: 0.2rem 0.4rem;
   font-size: 0.875em;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.86);
   background-color: #212529;
   border-radius: 0.2rem;
 }
@@ -11838,7 +11870,7 @@ body {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   font-family: "Inter", sans-serif;
-  font-size: 80%;
+  font-size: 100%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;
@@ -11848,7 +11880,9 @@ body {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  width: 100%;
+  width: 100vw;
+  max-width: none;
+  margin-inline: calc(50% - 50vw);
   height: 100vh;
   min-height: 35rem;
   padding: 5rem 0;
@@ -11875,31 +11909,25 @@ body {
 .masthead > .container {
   position: relative;
   z-index: 1;
+  transform: translateY(9vh);
 }
 .masthead h1, .masthead .h1 {
-  padding-top: 10rem;
   font-family: "Inter", sans-serif;
   font-size: 2rem;
   font-weight: 600;
   line-height: 2rem;
   letter-spacing: 0.4rem;
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
+  color: #fff;
   text-shadow: 0 0.1rem 0.35rem rgba(0, 0, 0, 0.5);
 }
 
 .masthead h3, .masthead .h3 {
   font-family: "Inter", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.4;
   letter-spacing: 0.3rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.55));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
+  color: #fff;
   text-shadow: 0 0.1rem 0.45rem rgba(0, 0, 0, 0.65);
 }
 
@@ -11909,7 +11937,11 @@ body {
 }
 .masthead h6, .masthead .h6 {
   max-width: 20rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+}
+.masthead h2.text-white-50,
+.masthead h6.text-white-50 {
+  color: rgba(255, 255, 255, 0.82) !important;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -11923,25 +11955,25 @@ body {
   }
   .masthead h1, .masthead .h1 {
     /* Keep the long, letter-spaced title comfortably inside narrow screens. */
-    font-size: clamp(1.75rem, 8vw, 2.25rem);
+    font-size: clamp(2.25rem, 10vw, 3.25rem);
     line-height: 1.15;
     letter-spacing: 0.3rem;
   }
   .masthead h3, .masthead .h3 {
-    font-size: clamp(0.65rem, 3vw, 0.85rem);
+    font-size: clamp(1rem, 4.5vw, 1.4rem);
     line-height: 1.3;
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.16rem;
   }
 }
 
 @media (min-width: 768px) {
   .masthead h1, .masthead .h1 {
-    font-size: 3.5rem;
+    font-size: clamp(4rem, 7vw, 6rem);
     line-height: 1.1;
     letter-spacing: 0.45rem;
   }
   .masthead h3, .masthead .h3 {
-    font-size: 1rem;
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
     letter-spacing: 0.35rem;
   }
 }
@@ -11952,19 +11984,19 @@ body {
     background-position: center top;
   }
   .masthead h1, .masthead .h1 {
-    padding-top: 3rem;
-    font-size: clamp(4rem, 5vw, 5.25rem);
+    font-size: clamp(5.5rem, 9vw, 8rem);
     line-height: 1.05;
-    letter-spacing: 0.45rem;
+    letter-spacing: clamp(0.35rem, 0.7vw, 0.7rem);
   }
   .masthead h3, .masthead .h3 {
-    font-size: 1.1rem;
+    font-size: clamp(1.75rem, 2.7vw, 2.3rem);
     line-height: 1.4;
-    letter-spacing: 0.4rem;
+    letter-spacing: clamp(0.25rem, 0.45vw, 0.45rem);
   }
   .masthead h2, .masthead .h2 {
-    max-width: 30rem;
-    font-size: 1.25rem;
+    max-width: 48rem;
+    font-size: clamp(1.7rem, 2.4vw, 2.15rem);
+    line-height: 1.4;
   }
 }
 
@@ -11974,6 +12006,77 @@ body {
 }
 .about-section p {
   margin-bottom: 5rem;
+}
+
+.reviews-section {
+  padding: 6rem 0;
+  color: #202020;
+  text-align: center;
+  background: #f3f1ed;
+}
+.reviews-section h2 {
+  font-size: clamp(2rem, 3vw, 2.75rem);
+}
+.review-slider-hint {
+  margin-bottom: 0.75rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+.review-slider {
+  max-width: 58rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 0.25rem 0.25rem 0.75rem;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-color: #8b0000 #dedbd5;
+}
+.review-slider:focus-visible {
+  outline: 3px solid #8b0000;
+  outline-offset: 4px;
+}
+.review-card {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  margin: 0;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border-left: 0.3rem solid #8b0000;
+  border-radius: 0.35rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+.review-card blockquote {
+  margin: 0;
+  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+  line-height: 1.7;
+}
+.review-card figcaption {
+  margin-top: 1.25rem;
+  color: #555;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.review-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.btn-review {
+  color: #fff;
+  background: #8b0000;
+}
+.btn-review:hover,
+.btn-review:focus-visible {
+  color: #fff;
+  background: #650000;
 }
 
 .projects-section {
@@ -12016,7 +12119,7 @@ body {
   padding: 1.25rem 2rem;
   height: 100vh;
   font-family: "Inter", sans-serif;
-  font-size: 80%;
+  font-size: 100%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;
@@ -12030,7 +12133,7 @@ body {
   border-bottom: 0.25rem solid #AF460F;
 }
 .contact-section .card h4, .contact-section .card .h4 {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
@@ -12063,128 +12166,59 @@ body {
   padding: 5rem 0;
 }
 
-.calendar-section {
-  padding-top: 22rem;
-}
-
-@media screen and (max-width:768px){
-  .calendar-section {
-  padding-top: 2rem;
-  }
-
-}
-@media (max-width: 768px) {
-    iframe {
-      width: 450px;
-      height: 400px;
-    }
-  }
-
 .calendarhead {
   position: relative;
-  width: 100%;
-  height: 100vh;
-  padding: 5rem 0;
+  min-height: 100vh;
+  padding: 7rem 0 3rem;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 85%, #000 100%), url("../assets/img/Dragonview__020.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
-.calendarhead h1, .calendarhead .h1 {
+.calendar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.calendar-title {
+  margin: 0 0 1.5rem;
   font-family: "Inter", sans-serif;
-  font-size: 2rem;
-  line-height: 2rem;
-  letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
-}
-
-.calendarhead h3, .calendarhead .h3 {
-  font-family: "Inter", sans-serif;
-  font-size: 3.9rem;
-  line-height: 3.5rem;
-  letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
-}
-
-.calendarhead h2, .calendarhead .h2 {
-  max-width: 20rem;
-  font-size: 1rem;
-}
-
-@media screen and (max-width:768px){
-  .calendarhead h1{
-     font-size:2.5rem;
-  }
-  .calendarhead h3 {
-    font-size:1.2rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .calendarhead h1, .calendarhead .h1 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-  }
-}
-@media (min-width: 992px) {
-  .calendarhead {
-    height: 100vh;
-    padding: 0;
-  }
-  .calendarhead h1, .calendarhead .h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
-    letter-spacing: 0.8rem;
-  }
-  .calendarhead h2, .calendarhead .h2 {
-    max-width: 30rem;
-    font-size: 1.25rem;
-  }
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 600;
+  letter-spacing: clamp(0.15rem, 0.6vw, 0.5rem);
+  text-align: center;
+  text-shadow: 0 0.15rem 0.5rem rgba(0, 0, 0, 0.7);
 }
 
 .calendar-footer {
-    padding-top: 15rem;
+  padding: 2.5rem 0;
 }
 
-/* Responsive iFrame */
-.googleCalendar{
+.googleCalendar {
   position: relative;
-  height: 600px;
-  width: 800px;
-  padding-bottom: 50%;
+  width: min(100%, 900px);
+  height: clamp(480px, 72vh, 680px);
+  overflow: hidden;
+  border-radius: 0.35rem;
+  background: #fff;
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.35);
 }
-
-.googleCalendar iframe{
+.googleCalendar iframe {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
+  border: 0;
 }
-@media screen and (max-width:768px){
-    .googleCalendar{
-    position: relative;
-    height: 300px;
-    width: 350px;
-    padding-bottom: 50%;
-    }
-    .googleCalendar iframe{
-    position : absolute;
-    width: 100%;
-    height: 100%;
-    top: 0,
-    left:0
-    }
+@media (max-width: 575.98px) {
+  .calendarhead {
+    padding-top: 6rem;
+  }
+  .googleCalendar {
+    height: 70vh;
+    min-height: 450px;
+  }
 }
 @media screen and (max-width:768px){
     .navbar-toggler:focus ~ .navbar-collapse .nav-link {
