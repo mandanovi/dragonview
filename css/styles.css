@@ -99,18 +99,30 @@
   flex-basis: 125px;
 }
 
-.booking-logo-calendar {
-  display: block;
-  width: 5rem;
-  height: 5rem;
-  overflow: hidden;
+.booking-logo-calendar-contact {
+  position: relative;
 }
 
-.booking-link-calendar img {
-  width: 13.25rem;
+.booking-logo-calendar-contact img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
   max-width: none;
   height: auto;
-  transform: translateX(-4.125rem);
+  filter: none;
+  transform: translate(-50%, -50%);
+}
+
+.booking-link .booking-logo-calendar-contact img {
+  top: 18%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  object-position: center top;
+  transform: none;
+  clip-path: inset(0 0 20% 0);
 }
 
 /* On narrower screens, keep booking links useful without competing with the title. */
@@ -138,11 +150,6 @@
     height: 3.75rem;
   }
 
-  .booking-logo-calendar {
-    width: 3.75rem;
-    height: 3.75rem;
-  }
-
   .booking-logo-vrbo {
     width: 3.75rem;
     height: 3.75rem;
@@ -153,11 +160,6 @@
     transform: translateY(0.15rem) scale(1.1);
   }
 
-  .booking-link-calendar img {
-    width: 9.9rem;
-    height: auto;
-    transform: translateX(-3.075rem);
-  }
 }
 
   .contentarea {
