@@ -12171,7 +12171,7 @@ body {
 .calendarhead {
   position: relative;
   min-height: 100vh;
-  padding: 7rem 0 3rem;
+  padding: clamp(9rem, 14vh, 11rem) 0 3rem;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 85%, #000 100%), url("../assets/img/Dragonview__020.jpg");
   background-position: center;
   background-repeat: no-repeat;
